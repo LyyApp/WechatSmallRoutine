@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/Front/Front",
+    "pages/Customeied/Customeied",
+    "pages/SPCart/SPCart",
+    "pages/My/My"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Front/Front",
+        "text": "首页",
+        "iconPath": "pages/images/customer_up.png",
+        "selectedIconPath": "pages/images/customer_up.png"
+      },
+      {
+        "pagePath": "pages/Customeied/Customeied",
+        "text": "定制",
+        "iconPath": "pages/images/customer_up.png",
+        "selectedIconPath": "pages/images/customer_up.png"
+      },
+      {
+        "pagePath": "pages/SPCart/SPCart",
+        "text": "购物车",
+        "iconPath": "pages/images/customer_up.png",
+        "selectedIconPath": "pages/images/customer_up.png"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "text": "我的",
+        "iconPath": "pages/images/customer_up.png",
+        "selectedIconPath": "pages/images/customer_up.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap13.json"
+}

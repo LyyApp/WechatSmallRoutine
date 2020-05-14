@@ -1,0 +1,48 @@
+<!--pages/Customeied/Customeied.wxml-->
+<view class="customeContainer">
+	<image class="customer_img">耳机图片</image>
+	<!-- <cover-view class="customer_cover">
+    <button>加入购物车</button>
+  </cover-view> -->
+
+	<view class="customer_li" data-index="0" bindtap="ontap">
+		<view class="customer_li_left">{{listSelect[0]}}</view>
+		<image class="customer_li_right" src=" {{selectedFlag[0]?'../images/customer_up.png':'../images/customer_down.png'}}"></image>
+	</view>
+	<view hidden="{{!selectedFlag[0]}}" class="customer_type_childrens">
+		<block wx:for="{{listType}}" wx:for-item="item" wx:for-index="index">
+			<view class="customer_type_item">
+				<view class="customer_type_item_text">{{listType[index]["id"]}}</view>
+				<view class="customer_type_item_text">{{listType[index]["price"]}}</view>
+			</view>
+		</block>
+	</view>
+
+	<view class="customer_li" data-index="1" bindtap="ontap">
+		<view class="customer_li_left">{{listSelect[1]}}</view>
+		<image class="customer_li_right" src=" {{selectedFlag[1]?'../images/customer_up.png':'../images/customer_down.png'}}"></image>
+	</view>
+	<view hidden="{{!selectedFlag[1]}}" class="customer_pannel_childrens">
+		<block wx:for="{{listPannel}}" wx:for-item="item" wx:for-index="index">
+			<view class="customer_pannel_item" bindtap="showPannel">
+				{{listPannel[index]}}
+			</view>
+			<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+			<!--弹出框  -->
+			<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">在这里写弹出框里面的布局
+			</view>
+		</block>
+	</view>
+
+
+
+	<view class="customer_li" data-index="2" bindtap="ontap">
+		<view class="customer_li_left">{{listSelect[2]}}</view>
+		<image class="customer_li_right" src=" {{selectedFlag[2]?'../images/customer_up.png':'../images/customer_down.png'}}"></image>
+	</view>
+
+	<view class="customer_li" data-index="3" bindtap="ontap">
+		<view class="customer_li_left">{{listSelect[3]}}</view>
+		<image class="customer_li_right" src=" {{selectedFlag[3]?'../images/customer_up.png':'../images/customer_down.png'}}"></image>
+	</view>
+</view>
